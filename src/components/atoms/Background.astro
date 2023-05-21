@@ -1,0 +1,16 @@
+---
+import Particles from "astro-particles"
+import type { ISourceOptions } from "tsparticles-engine";
+import ParticlesParams from '../../assets/particles.json'
+---
+
+<script>
+	import { tsParticles } from "tsparticles-engine";
+	import { loadFull } from "tsparticles";
+
+	(async () => {
+    await loadFull(tsParticles);
+	})();
+</script>
+
+<Particles id="tsparticles" options={ParticlesParams as ISourceOptions} />
