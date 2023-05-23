@@ -1,152 +1,133 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Background from '../components/atoms/Background.astro'
 import { Icon } from 'astro-icon'
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<div class="h-screen flex justify-evenly items-center flex-wrap-reverse relative z-10">
-			<div>
-				<div class="text-6xl lg:text-8xl font-bold text-left animate-rotate-in-2-tl-ccw">
-					<h2>Hi,</h2>
-					<h1>I'm<span class="ml-4 font-bold text-headline dark:text-dark-headline">Yumekiti</span></h1>
-					<span class="text-5xl lg:text-6xl font-bold text-emphasis border-b-4 border-emphasis">
-						Web Developer
-					</span>
+	<div class="h-screen flex justify-evenly items-center flex-wrap-reverse relative">
+		<div>
+			<div class="text-6xl lg:text-8xl font-bold text-left animate-rotate-in-2-tl-ccw">
+				<h2>Hi,</h2>
+				<h1>I'm<span class="ml-4 font-bold text-headline dark:text-dark-headline">Yumekiti</span></h1>
+				<span class="text-5xl lg:text-6xl font-bold text-emphasis border-b-4 border-emphasis">
+					Web Developer
+				</span>
+			</div>
+			<button class="mt-8 px-4 py-2 rounded-lg shadow-lg bg-button text-button-text hover:bg-button-hover flex items-center">
+				About Me
+				<Icon name="uiw:swap-right" class="ml-4 h-6 w-6" />
+			</button>
+		</div>
+		<div>
+			<div class="rounded-tr-lg rounded-b-lg overflow-hidden shadow-2xl w-80 h-80 lg:w-96 lg:h-96 animate-bounce-in-top delay-700">
+				<img src="/images/me.png" alt="Astro" class="w-full h-full" />
+			</div>
+		</div>
+		<div class="absolute bottom-0 right-0 mb-8 mr-8">
+			<Icon name="ep:sort-down" class="h-14 w-14 animate-bounce" />
+		</div>
+	</div>
+	<div class="flex justify-center items-center px-4 py-12">
+		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
+			<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
+				Work
+			</h1>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
+					<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
 				</div>
-				<button class="mt-8 px-4 py-2 rounded-lg shadow-lg bg-button text-button-text hover:bg-button-hover flex items-center">
-					About Me
-					<Icon name="uiw:swap-right" class="ml-4 h-6 w-6" />
+				<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
+					<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
+				</div>
+				<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
+					<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex justify-center items-center px-4 py-12">
+		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12 text-headline dark:text-dark-headline">
+			<h1 class="text-4xl font-bold text-center mb-8">
+				Skill
+			</h1>
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+				<div class="col-span-1">
+					<div class="mb-2 flex justify-center items-center">
+						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
+						<span class="ml-4 text-2xl">
+							HTML5
+						</span>
+					</div>
+					<hr class="border-2 border-emphasis w-full mx-auto" />
+				</div>
+				<div class="col-span-1">
+					<div class="mb-2 flex justify-center items-center">
+						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
+						<span class="ml-4 text-2xl">
+							HTML5
+						</span>
+					</div>
+					<hr class="border-2 border-emphasis w-full mx-auto" />
+				</div>
+				<div class="col-span-1">
+					<div class="mb-2 flex justify-center items-center">
+						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
+						<span class="ml-4 text-2xl">
+							HTML5
+						</span>
+					</div>
+					<hr class="border-2 border-emphasis w-full mx-auto" />
+				</div>
+				<div class="col-span-1">
+					<div class="mb-2 flex justify-center items-center">
+						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
+						<span class="ml-4 text-2xl">
+							HTML5
+						</span>
+					</div>
+					<hr class="border-2 border-emphasis w-full mx-auto" />
+				</div>
+				<div class="col-span-1">
+					<div class="mb-2 flex justify-center items-center">
+						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
+						<span class="ml-4 text-2xl">
+							HTML5
+						</span>
+					</div>
+					<hr class="border-2 border-emphasis w-full mx-auto" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex justify-center items-center px-4 py-12">
+		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
+			<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
+				About
+			</h1>
+			<div class="flex justify-center items-center">
+				<div class="w-full md:w-8/12 lg:w-6/12">
+					私はインフラについての学習に積極的に取り組んでおり、現在はインフラの自動化について研究を進めています。
+					インフラはビジネスにおいて非常に重要な役割を果たしており、その効率化には深い理解が必要です。
+					そのため、さまざまなリソースや学習コンテンツを活用して、実践的な知識を身につける努力をしています。
+					具体的には、クラウド環境の構築やネットワークの最適化、セキュリティ対策など、インフラ全体の様々な側面について学んでいます。
+					また、自動化ツールやオーケストレーションツールを利用して、インフラの管理やデプロイメントを効率化する方法についても積極的に探求しています。
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex justify-center items-center px-4 py-12">
+		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
+			<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
+				Contact
+			</h1>
+			<div class="flex flex-col gap-4 justify-center items-center">
+				<input class="w-full md:w-8/12 lg:w-4/12 h-12 rounded pl-4 border-2" type="text" placeholder="名前" />
+				<input class="w-full md:w-8/12 lg:w-4/12 h-12 rounded pl-4 border-2" type="text" placeholder="メールアドレス" />
+				<textarea class="w-full md:w-8/12 lg:w-4/12 h-64 rounded p-2 border-2" />
+				<button class="w-full md:w-8/12 lg:w-4/12 h-12 rounded bg-emphasis text-button-text hover:bg-emphasis-hover">
+					送信
 				</button>
 			</div>
-			<div>
-				<div class="rounded-tr-lg rounded-b-lg overflow-hidden shadow-2xl w-80 h-80 lg:w-96 lg:h-96 animate-bounce-in-top delay-700">
-					<img src="/images/me.png" alt="Astro" class="w-full h-full" />
-				</div>
-			</div>
-			<div class="absolute bottom-0 right-0 mb-8 mr-8">
-				<Icon name="ep:sort-down" class="h-14 w-14 animate-bounce" />
-			</div>
-      <div class="absolute">
-        <Background />
-      </div>
 		</div>
-		<div class="flex justify-center items-center px-4 py-12 relative z-10">
-			<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
-				<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
-					Work
-				</h1>
-				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-					<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
-						<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
-					</div>
-					<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
-						<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
-					</div>
-					<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
-						<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
-					</div>
-				</div>
-				<div class="flex justify-center mt-8">
-					<div class="flex rounded-md bg-button items-center">
-						<a href="#" class="text-button-text hover:bg-button-hover px-4 py-4 rounded-l-md">
-							<Icon name="heroicons-outline:chevron-left" class="h-6 w-6" />
-						</a>
-						<p class="text-button-text px-4">
-							1
-						</p>
-						<a href="#" class="text-button-text hover:bg-button-hover px-4 py-4 rounded-r-md">
-							<Icon name="heroicons-outline:chevron-right" class="h-6 w-6" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="flex justify-center items-center px-4 py-12 relative z-10">
-			<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12 text-headline dark:text-dark-headline">
-				<h1 class="text-4xl font-bold text-center mb-8">
-					Skill
-				</h1>
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-					<div class="col-span-1">
-						<div class="mb-2 flex justify-center items-center">
-							<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-							<span class="ml-4 text-2xl">
-								HTML5
-							</span>
-						</div>
-						<hr class="border-2 border-emphasis w-full mx-auto" />
-					</div>
-					<div class="col-span-1">
-						<div class="mb-2 flex justify-center items-center">
-							<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-							<span class="ml-4 text-2xl">
-								HTML5
-							</span>
-						</div>
-						<hr class="border-2 border-emphasis w-full mx-auto" />
-					</div>
-					<div class="col-span-1">
-						<div class="mb-2 flex justify-center items-center">
-							<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-							<span class="ml-4 text-2xl">
-								HTML5
-							</span>
-						</div>
-						<hr class="border-2 border-emphasis w-full mx-auto" />
-					</div>
-					<div class="col-span-1">
-						<div class="mb-2 flex justify-center items-center">
-							<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-							<span class="ml-4 text-2xl">
-								HTML5
-							</span>
-						</div>
-						<hr class="border-2 border-emphasis w-full mx-auto" />
-					</div>
-					<div class="col-span-1">
-						<div class="mb-2 flex justify-center items-center">
-							<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-							<span class="ml-4 text-2xl">
-								HTML5
-							</span>
-						</div>
-						<hr class="border-2 border-emphasis w-full mx-auto" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="flex justify-center items-center px-4 py-12 relative z-10">
-			<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
-				<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
-					About
-				</h1>
-				<div class="flex justify-center items-center">
-          <div class="w-full md:w-8/12 lg:w-6/12">
-            私はインフラについての学習に積極的に取り組んでおり、現在はインフラの自動化について研究を進めています。
-            インフラはビジネスにおいて非常に重要な役割を果たしており、その効率化には深い理解が必要です。
-            そのため、さまざまなリソースや学習コンテンツを活用して、実践的な知識を身につける努力をしています。
-            具体的には、クラウド環境の構築やネットワークの最適化、セキュリティ対策など、インフラ全体の様々な側面について学んでいます。
-            また、自動化ツールやオーケストレーションツールを利用して、インフラの管理やデプロイメントを効率化する方法についても積極的に探求しています。
-          </div>
-        </div>
-			</div>
-		</div>
-		<div class="flex justify-center items-center px-4 py-12 relative z-10">
-			<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
-				<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
-					Contact
-				</h1>
-				<div class="flex flex-col gap-4 justify-center items-center">
-          <input class="w-11/12 md:w-8/12 lg:w-4/12 h-12 rounded pl-4 border-2" type="text" placeholder="名前" />
-          <input class="w-11/12 md:w-8/12 lg:w-4/12 h-12 rounded pl-4 border-2" type="text" placeholder="メールアドレス" />
-          <textarea class="w-11/12 md:w-8/12 lg:w-4/12 h-64 rounded p-2 border-2" />
-          <button class="w-11/12 md:w-8/12 lg:w-4/12 h-12 rounded bg-emphasis text-button-text hover:bg-emphasis-hover">
-            送信
-          </button>
-        </div>
-			</div>
-		</div>
-	</main>
+	</div>
 </Layout>
