@@ -1,5 +1,4 @@
 {
-  "autoPlay": true,
   "background": {
     "color": {
       "value": "#fff"
@@ -24,7 +23,7 @@
   "delay": 0,
   "fullScreen": {
     "enable": true,
-    "zIndex": 1
+    "zIndex": -1
   },
   "detectRetina": true,
   "duration": 0,
@@ -364,7 +363,7 @@
         "enable": false,
         "minimumValue": 0
       },
-      "value": 0,
+      "value": 20,
       "opacityRate": 1,
       "sizeRate": 1,
       "velocityRate": 1
