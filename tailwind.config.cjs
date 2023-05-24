@@ -73,16 +73,16 @@ module.exports = {
 						transform: "scale3d(1.25, .75, 1)"
 					},
 					"40%": {
-						transform: "scale3d(.75, 1.25, 1)"
+						transform: "scale3d(.75, 1, 1)"
 					},
 					"50%": {
-						transform: "scale3d(1.15, .85, 1)"
+						transform: "scale3d(1.15, .80, 1)"
 					},
 					"65%": {
-						transform: "scale3d(.95, 1.05, 1)"
+						transform: "scale3d(.95, .95, 1)"
 					},
 					"75%": {
-						transform: "scale3d(1.05, .95, 1)"
+						transform: "scale3d(1.05, .90, 1)"
 					}
 				}
 			}
