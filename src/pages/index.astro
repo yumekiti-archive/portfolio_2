@@ -1,7 +1,30 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon'
+
+import '@splidejs/splide/css/skyblue';
 ---
+
+<script>
+	import Splide from '@splidejs/splide';
+
+	const splide = new Splide('.splide', {
+		perPage : 3,
+		rewind : true,
+		autoplay: true,
+		interval: 3000,
+		pauseOnHover: false,
+		gap: '0.8rem',
+		breakpoints: {
+			1024: {
+				perPage: 2,
+			},
+			640: {
+				perPage: 1,
+			}
+		}
+	}).mount();
+</script>
 
 <Layout title="Welcome to Astro.">
 	<div class="h-screen flex justify-evenly items-center flex-wrap-reverse relative">
@@ -32,17 +55,21 @@ import { Icon } from 'astro-icon'
 			<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
 				Work
 			</h1>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
-					<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
+			<section class="splide" aria-label="works">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide">
+							<img src="/images/work/poipla.png" alt="Astro" />
+						</li>
+						<li class="splide__slide">
+							<img src="/images/work/poipla.png" alt="Astro" />
+						</li>
+						<li class="splide__slide">
+							<img src="/images/work/poipla.png" alt="Astro" />
+						</li>
+					</ul>
 				</div>
-				<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
-					<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
-				</div>
-				<div class="col-span-1 rounded-lg overflow-hidden shadow-lg aspect-video hover:animate-jello-horizontal cursor-pointer">
-					<img src="/images/work/poipla.png" alt="Astro" class="w-full h-full object-cover" />
-				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 	<div class="flex justify-center items-center px-4 py-12">
