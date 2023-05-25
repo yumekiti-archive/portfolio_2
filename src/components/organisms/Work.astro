@@ -1,0 +1,51 @@
+---
+import '@splidejs/splide/css/skyblue';
+
+import Card from '../molecules/Card.astro'
+---
+
+<script>
+	import Splide from '@splidejs/splide';
+
+	new Splide('.splide', {
+		perPage : 3,
+		rewind : true,
+		autoplay: true,
+		interval: 5000,
+		pauseOnHover: false,
+		gap: '0.8rem',
+		breakpoints: {
+			1024: {
+				perPage: 2,
+			},
+			640: {
+				perPage: 1,
+			}
+		}
+	}).mount();
+</script>
+
+
+<Card title="Work">
+  <section class="splide" aria-label="works">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
+        </li>
+        <li class="splide__slide">
+          <img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
+        </li>
+      </ul>
+    </div>
+  </section>
+</Card>

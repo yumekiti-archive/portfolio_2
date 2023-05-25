@@ -3,164 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import { Icon } from 'astro-icon'
 
 import '@splidejs/splide/css/skyblue';
+
+import MV from '../components/organisms/MV.astro';
+import Work from '../components/organisms/Work.astro';
+import Skill from '../components/organisms/Skill.astro';
+import About from '../components/organisms/About.astro';
+import Contact from '../components/organisms/Contact.astro';
 ---
 
-<script>
-	import Splide from '@splidejs/splide';
-
-	new Splide('.splide', {
-		perPage : 3,
-		rewind : true,
-		autoplay: true,
-		interval: 5000,
-		pauseOnHover: false,
-		gap: '0.8rem',
-		breakpoints: {
-			1024: {
-				perPage: 2,
-			},
-			640: {
-				perPage: 1,
-			}
-		}
-	}).mount();
-</script>
-
 <Layout title="Welcome to Astro.">
-	<div class="h-screen flex justify-evenly items-center flex-wrap-reverse relative">
-		<div>
-			<div class="text-6xl lg:text-8xl font-bold text-left animate-rotate-in-2-tl-ccw">
-				<h2>Hi,</h2>
-				<h1>I'm<span class="ml-4 font-bold text-headline dark:text-dark-headline">Yumekiti</span></h1>
-				<span class="text-5xl lg:text-6xl font-bold text-emphasis border-b-4 border-emphasis">
-					Web Developer
-				</span>
-			</div>
-			<button class="mt-8 px-4 py-2 rounded-lg shadow-lg bg-button text-button-text hover:bg-button-hover flex items-center">
-				About Me
-				<Icon name="uiw:swap-right" class="ml-4 h-6 w-6" />
-			</button>
-		</div>
-		<div>
-			<div class="rounded-tr-lg rounded-b-lg overflow-hidden shadow-2xl w-80 h-80 lg:w-96 lg:h-96 animate-bounce-in-top delay-700">
-				<img src="/images/me.png" alt="Astro" class="w-full h-full" />
-			</div>
-		</div>
-		<div class="absolute bottom-0 right-0 mb-8 mr-8">
-			<Icon name="ep:sort-down" class="h-14 w-14 animate-bounce" />
-		</div>
-	</div>
-	<div class="flex justify-center items-center px-4 py-12">
-		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
-			<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
-				Work
-			</h1>
-			<section class="splide" aria-label="works">
-				<div class="splide__track">
-					<ul class="splide__list">
-						<li class="splide__slide">
-							<img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
-						</li>
-						<li class="splide__slide">
-							<img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
-						</li>
-						<li class="splide__slide">
-							<img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
-						</li>
-						<li class="splide__slide">
-							<img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
-						</li>
-						<li class="splide__slide">
-							<img src="/images/work/poipla.png" alt="Astro" class="hover:animate-jello-horizontal cursor-pointer" />
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	</div>
-	<div class="flex justify-center items-center px-4 py-12">
-		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12 text-headline dark:text-dark-headline">
-			<h1 class="text-4xl font-bold text-center mb-8">
-				Skill
-			</h1>
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-				<div class="col-span-1">
-					<div class="mb-2 flex justify-center items-center">
-						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-						<span class="ml-4 text-2xl">
-							HTML5
-						</span>
-					</div>
-					<hr class="border-2 border-emphasis w-full mx-auto" />
-				</div>
-				<div class="col-span-1">
-					<div class="mb-2 flex justify-center items-center">
-						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-						<span class="ml-4 text-2xl">
-							HTML5
-						</span>
-					</div>
-					<hr class="border-2 border-emphasis w-full mx-auto" />
-				</div>
-				<div class="col-span-1">
-					<div class="mb-2 flex justify-center items-center">
-						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-						<span class="ml-4 text-2xl">
-							HTML5
-						</span>
-					</div>
-					<hr class="border-2 border-emphasis w-full mx-auto" />
-				</div>
-				<div class="col-span-1">
-					<div class="mb-2 flex justify-center items-center">
-						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-						<span class="ml-4 text-2xl">
-							HTML5
-						</span>
-					</div>
-					<hr class="border-2 border-emphasis w-full mx-auto" />
-				</div>
-				<div class="col-span-1">
-					<div class="mb-2 flex justify-center items-center">
-						<Icon name="logos:html-5" class="w-12 h-12 object-cover" />
-						<span class="ml-4 text-2xl">
-							HTML5
-						</span>
-					</div>
-					<hr class="border-2 border-emphasis w-full mx-auto" />
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="flex justify-center items-center px-4 py-12">
-		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
-			<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
-				About
-			</h1>
-			<div class="flex justify-center items-center">
-				<div class="w-full md:w-8/12 lg:w-6/12">
-					私はインフラについて勉強しており、最近ではインフラの自動化について研究を進めています。
-					インフラは世の中をより便利にするためには欠かせないものであると考えており、
-					インフラの自動化によってより多くの人にインフラの恩恵を受けてもらいたいと考えています。
-					そのため、様々なイベントや勉強会に参加して、学習しています。
-					また、その成果をブログにまとめたり、発表したりしています。
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="flex justify-center items-center px-4 py-12">
-		<div class="container mx-auto bg-card dark:bg-dark-card rounded-lg py-8 px-12">
-			<h1 class="text-4xl font-bold text-center mb-8 text-headline dark:text-dark-headline">
-				Contact
-			</h1>
-			<div class="flex flex-col gap-4 justify-center items-center">
-				<input class="w-full md:w-8/12 lg:w-4/12 h-12 rounded pl-4 border-2" type="text" placeholder="名前" />
-				<input class="w-full md:w-8/12 lg:w-4/12 h-12 rounded pl-4 border-2" type="text" placeholder="メールアドレス" />
-				<textarea class="w-full md:w-8/12 lg:w-4/12 h-64 rounded p-2 border-2" />
-				<button class="w-full md:w-8/12 lg:w-4/12 h-12 rounded bg-emphasis text-button-text hover:bg-emphasis-hover">
-					送信
-				</button>
-			</div>
-		</div>
-	</div>
+	<MV />
+	<Work />
+	<Skill />
+	<About />
+	<Contact />
 </Layout>

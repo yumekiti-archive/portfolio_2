@@ -1,0 +1,27 @@
+---
+import { Icon } from 'astro-icon'
+---
+
+<div class="h-screen flex justify-evenly items-center flex-wrap-reverse relative">
+  <div>
+    <div class="text-6xl lg:text-8xl font-bold text-left animate-rotate-in-2-tl-ccw">
+      <h2>Hi,</h2>
+      <h1>I'm<span class="ml-4 font-bold text-headline dark:text-dark-headline">Yumekiti</span></h1>
+      <span class="text-5xl lg:text-6xl font-bold text-emphasis border-b-4 border-emphasis">
+        Web Developer
+      </span>
+    </div>
+    <button class="mt-8 px-4 py-2 rounded-lg shadow-lg bg-button text-button-text hover:bg-button-hover flex items-center">
+      About Me
+      <Icon name="uiw:swap-right" class="ml-4 h-6 w-6" />
+    </button>
+  </div>
+  <div>
+    <div class="rounded-tr-lg rounded-b-lg overflow-hidden shadow-2xl w-80 h-80 lg:w-96 lg:h-96 animate-bounce-in-top delay-700">
+      <img src="/images/me.png" alt="Astro" class="w-full h-full" />
+    </div>
+  </div>
+  <div class="absolute bottom-0 right-0 mb-8 mr-8">
+    <Icon name="ep:sort-down" class="h-14 w-14 animate-bounce" />
+  </div>
+</div>
