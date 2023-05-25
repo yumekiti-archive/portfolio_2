@@ -33,14 +33,22 @@ import Contact from '../components/organisms/Contact.astro';
 								</div>
 							</div>
 							<div class="px-4 py-2 text-sm border rounded-lg">
-								プログラミングの基礎や、Webに関する知識を学ぶ
+								プログラミングの基礎や、ITに関する知識を学ぶ
 							</div>
 						</div>
 					</li>
 				</ol>
 			</div>
-		</div>		
+		</div>
 	</Card>
 	<About />
-	<Contact />
+	<footer class="h-20">
+		<div
+			class="h-full px-4 text-sm flex items-center justify-between"
+		>
+			<span>
+				&copy; {new Date().getFullYear()} - Copyright Yumekiti.
+			</span>
+		</div>
+	</footer>
 </Layout>
