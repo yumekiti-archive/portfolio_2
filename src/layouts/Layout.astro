@@ -25,9 +25,8 @@ const { title } = Astro.props;
 		<div class="animate-fade-in-top">
 			<Header />
 		</div>
-
-		<div class="container mx-auto relative text-secondary dark:text-dark-secondary border-stroke dark:border-dark-stroke ring-white ring-stroke dark:ring-dark-stroke">
-			<div class="absolute inset-0 z-20">
+		<div class="container mx-auto text-secondary dark:text-dark-secondary border-stroke dark:border-dark-stroke ring-white ring-stroke dark:ring-dark-stroke">
+			<div class="absolute inset-0 z-20 relative">
 				<slot />
 				<Footer />
 			</div>
