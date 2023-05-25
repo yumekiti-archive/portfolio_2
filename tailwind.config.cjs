@@ -22,9 +22,9 @@ module.exports = {
 			animation: {
 				"scale-out-tr": "scale-out-tr 0.5s 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
 				"tracking-in-expand": "tracking-in-expand 1s 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000)   both",
-				"bounce-in-top": "bounce-in-top 1.1s 2s ease   both",
-				"rotate-in-2-tl-ccw": "rotate-in-2-tl-ccw 0.6s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
-				"fade-in-top": "fade-in-top 0.6s 4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
+				"bounce-in-top": "bounce-in-top 1.1s 2.5s ease   both",
+				"rotate-in-2-tl-ccw": "rotate-in-2-tl-ccw 0.6s 4s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+				"fade-in-top": "fade-in-top 0.6s 5s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
 				"jello-horizontal": "jello-horizontal 0.8s ease   both"
 			},
 			keyframes: {
