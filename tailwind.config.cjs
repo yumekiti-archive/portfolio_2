@@ -3,20 +3,19 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		colors: {
-      'background': '#d8eefe',
+      'main': '#d8eefe',
 			'card': '#fffffe',
-			'headline': '#094067',
-			'paragraph': '#5f6c7b',
-			'button': '#3da9fc',
-			'button-hover': '#3189CC',
-			'button-text': '#fffffe',
-			'emphasis': '#ef4565',
+			'stroke': '#094067',
+			'secondary': '#5f6c7b',
+			'highlight': '#3da9fc',
+			'highlight-hover': '#3189CC',
+			'highlight-text': '#fffffe',
+			'tertiary': '#ef4565',
 			dark: {
-				'background': '#094067',
+				'main': '#094067',
 				'card': '#093452',
-				'headline': '#fffffe',
-				'paragraph': '#bae6fd',
-				'headline': '#fffffe',
+				'stroke': '#fffffe',
+				'secondary': '#bae6fd',
 			}
     },
 		extend: {
