@@ -20,12 +20,38 @@ module.exports = {
     },
 		extend: {
 			animation: {
-				"bounce-in-top": "bounce-in-top 1.1s 1s ease   both",
-				"rotate-in-2-tl-ccw": "rotate-in-2-tl-ccw 0.5s 1.9s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
-				"fade-in-top": "fade-in-top 0.6s 3.1s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
+				"scale-out-tr": "scale-out-tr 0.5s 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)   both",
+				"tracking-in-expand": "tracking-in-expand 1s 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000)   both",
+				"bounce-in-top": "bounce-in-top 1.1s 2s ease   both",
+				"rotate-in-2-tl-ccw": "rotate-in-2-tl-ccw 0.6s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940)   both",
+				"fade-in-top": "fade-in-top 0.6s 4s cubic-bezier(0.390, 0.575, 0.565, 1.000)   both",
 				"jello-horizontal": "jello-horizontal 0.8s ease   both"
 			},
 			keyframes: {
+				"scale-out-tr": {
+					"0%": {
+						transform: "scale(1)",
+						"transform-origin": "100% 0%",
+						opacity: "1"
+					},
+					to: {
+						transform: "scale(0)",
+						"transform-origin": "100% 0%",
+						opacity: "1"
+					}
+				},
+				"tracking-in-expand": {
+					"0%": {
+						"letter-spacing": "-.5em",
+						opacity: "0"
+					},
+					"40%": {
+						opacity: ".6"
+					},
+					to: {
+						opacity: "1"
+					}
+				},
 				"bounce-in-top": {
 					"0%": {
 						transform: "translateY(-500px)",
