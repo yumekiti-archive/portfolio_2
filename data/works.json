@@ -1,0 +1,15 @@
+{
+  "main": [
+    {
+      "name": "ECCコンピュータ専門学校",
+      "url": "https://comp.ecc.ac.jp/",
+      "start": "2020-04",
+      "end": "-",
+      "position": "Student",
+      "joiningText": "入学",
+      "comment": "プログラミングの基礎や、ITに関する知識を学ぶ",
+      "description": "コンピュータ専門学校"
+    }
+  ],
+  "sub": []
+}
