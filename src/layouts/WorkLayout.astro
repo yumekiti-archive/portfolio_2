@@ -1,23 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<!-- <title>{title}</title> -->
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
-<style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
+---
+import { formatDate } from "../utils/formatDate";
+import Layout from "./Layout.astro";
+import type { CollectionEntry } from "astro:content";
+import type { MarkdownLayoutProps } from "astro";
+
+const { frontmatter, headings } = Astro.props as MarkdownLayoutProps<
+  CollectionEntry<"work">["data"]
+>;
+const date = formatDate(new Date(frontmatter.date));
+const indices = headings.filter((heading) => heading.depth < 4);
+const diffDate =
+  (new Date().getTime() - new Date(frontmatter.date).getTime()) /
+  (60 * 60 * 1000 * 24);
+const { title } = frontmatter;
+---
+
+<Layout title={title}>
+  <div class="blog text-gray-300">
+    <slot />
+  </div>
+  <div class="p-4">
+    <p>🔖 Index</p>
+    <ol class="mt-4">
+      {
+        indices.map(({ slug, text, depth }) => (
+          <li style={{ marginLeft: `${(depth - 1) * 12}px` }}>
+            <a href={`#${slug}`} class="text-sm hover:text-blue-300">
+              - {text}
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</Layout>
