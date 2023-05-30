@@ -5,14 +5,14 @@ module.exports = {
 		colors: {
       'main': '#d8eefe',
 			'card': '#fffffe',
-			'stroke': '#094067',
+			'stroke': '#0b4f7e',
 			'secondary': '#5f6c7b',
 			'highlight': '#3da9fc',
 			'highlight-hover': '#3189CC',
 			'highlight-text': '#fffffe',
 			'tertiary': '#ef4565',
 			dark: {
-				'main': '#094067',
+				'main': '#0b4f7e',
 				'card': '#093452',
 				'stroke': '#fffffe',
 				'secondary': '#bae6fd',

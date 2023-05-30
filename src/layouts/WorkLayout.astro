@@ -8,6 +8,8 @@ import Header from '../components/organisms/Header.astro'
 import Footer from '../components/organisms/Footer.astro'
 import Card from '../components/molecules/Card.astro';
 
+import '@splidejs/splide/css/skyblue';
+
 const { frontmatter, headings } = Astro.props as MarkdownLayoutProps<
   CollectionEntry<"work">["data"]
 >;
@@ -16,17 +18,102 @@ const indices = headings.filter((heading) => heading.depth < 4);
 const { title } = frontmatter;
 ---
 
+<script>
+	import Splide from '@splidejs/splide';
+
+	const main = new Splide('#main-slider', {
+		perPage : 1,
+		rewind : true,
+		pauseOnHover: true,
+    heightRatio: 0.6,
+    pagination : false,
+    arrows     : false,
+	})
+
+  const thumbnails = new Splide('#thumbnail-slider', {
+    rewind          : true,
+    fixedWidth      : 104,
+    fixedHeight     : 58,
+    isNavigation    : true,
+    gap             : 10,
+    focus           : 'center',
+    pagination      : false,
+    cover           : true,
+    dragMinThreshold: {
+      mouse: 4,
+      touch: 10,
+    },
+    breakpoints : {
+      640: {
+        fixedWidth  : 66,
+        fixedHeight : 38,
+      },
+    },
+  })
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+</script>
+
 <Layout title={title}>
   <Header />
   <div class="h-screen grid grid-cols-12 gap-4">
-    <div class="blog col-span-12 md:col-span-6">
+    <div class="blog col-span-12 md:col-span-6 md:overflow-y-scroll">
       <Card>
+        <a href="/works" class="text-highlight">← Works</a>
+        <h1>{frontmatter.title}</h1>
+        <p class="text-sm text-gray-500">{date}</p>
+        <hr class="my-4" />
         <slot />
       </Card>
     </div>
-    <div class="col-span-12 md:col-span-6">
+    <div class="col-span-12 md:col-span-6 order-first md:order-last my-auto">
       <Card>
-        asdasd
+        <section
+          id="main-slider"
+          class="splide"
+          aria-label="works"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="/images/work/poipla.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/work/piyomiru.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/work/remote_for_slides.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/work/cocoroiki.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section
+          id="thumbnail-slider"
+          class="splide"
+          aria-label="thumbnail"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="/images/work/poipla.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/work/piyomiru.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/work/remote_for_slides.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+              <li class="splide__slide">
+                <img src="/images/work/cocoroiki.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+              </li>
+            </ul>
+          </div>
+        </section>
       </Card>
     </div>
   </div>
@@ -42,7 +129,7 @@ const { title } = frontmatter;
   .blog h2,
   .blog h3,
   .blog h4 {
-    @apply font-semibold text-stroke mt-10 mb-1;
+    @apply font-semibold text-stroke mt-10 mb-1 dark:text-dark-stroke;
   }
   .blog h1 {
     @apply text-2xl;
@@ -57,12 +144,18 @@ const { title } = frontmatter;
     @apply text-base;
   }
   .blog code:not(pre > *) {
-    @apply bg-main mx-1 px-1 rounded-sm shadow-lg;
+    @apply bg-main mx-1 px-1 rounded-sm dark:bg-dark-main;
   }
   .blog ul {
-    @apply pl-4 my-2;
+    @apply pl-4 my-2 list-disc;
   }
   .blog li > ul {
+    @apply my-0;
+  }
+  .blog ol {
+    @apply pl-4 my-2 list-decimal list-decimal;
+  }
+  .blog li > ol {
     @apply my-0;
   }
   .blog p {
@@ -81,7 +174,7 @@ const { title } = frontmatter;
     @apply mx-auto;
   }
   .blog strong {
-    @apply font-semibold;
+    @apply font-semibold text-tertiary;
   }
   .blog blockquote {
     @apply px-4 border-l-2;
@@ -90,11 +183,8 @@ const { title } = frontmatter;
     @apply border-collapse table-auto w-full text-sm;
   }
   .blog th {
-    @apply border-b p-4 pl-8 pt-0 text-left;
+    @apply border-b p-4 pl-8 pt-0 text-stroke text-left dark:text-dark-stroke;
   }
-  /* .blog tbody {
-    @apply bg-gray-800;
-  } */
   .blog td {
     @apply border-b p-4 pl-8;
   }
