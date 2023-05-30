@@ -1,0 +1,40 @@
+---
+import type { GetStaticPathsOptions, Page } from "astro";
+import type { CollectionEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { getWorks } from "../../utils/work";
+
+import Card from '../../components/molecules/Card.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  return paginate(await getWorks(), { pageSize: 20 });
+}
+
+const { page } = Astro.props as {
+  page: Page<CollectionEntry<"work">>;
+};
+---
+
+<Layout title="works">
+  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    {
+      page.data.map(({ data, slug }) => (
+        <div class="col-span-1">
+          <a href={`/works/${slug}`}>
+            <Card>
+              <div class="border-b pb-4">
+                <img src={data.image} alt={data.title}
+                  class="w-full h-48 object-cover object-top rounded-lg shadow-md"
+                />
+              </div>
+              <div>
+                <h2 class="text-xl font-bold">{data.title}</h2>
+                <p>{data.from} - {data.to}</p>
+              </div>
+            </Card>
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</Layout>

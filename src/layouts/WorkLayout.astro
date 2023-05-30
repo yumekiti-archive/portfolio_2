@@ -4,7 +4,6 @@ import Layout from "./Layout.astro";
 import type { CollectionEntry } from "astro:content";
 import type { MarkdownLayoutProps } from "astro";
 
-import Header from '../components/organisms/Header.astro'
 import Footer from '../components/organisms/Footer.astro'
 import Card from '../components/molecules/Card.astro';
 
@@ -14,7 +13,6 @@ const { frontmatter, headings } = Astro.props as MarkdownLayoutProps<
   CollectionEntry<"work">["data"]
 >;
 const date = formatDate(new Date(frontmatter.date));
-const indices = headings.filter((heading) => heading.depth < 4);
 const { title } = frontmatter;
 ---
 
@@ -57,13 +55,14 @@ const { title } = frontmatter;
 </script>
 
 <Layout title={title}>
-  <Header />
   <div class="h-screen grid grid-cols-12 gap-4">
     <div class="blog col-span-12 md:col-span-6 md:overflow-y-scroll">
       <Card>
-        <a href="/works" class="text-highlight">← Works</a>
-        <h1>{frontmatter.title}</h1>
-        <p class="text-sm text-gray-500">{date}</p>
+        <div class="flex justify-between items-center">
+          <a href="/works" class="text-highlight">← Works</a>
+          <h1>{title}</h1>
+          <p class="text-sm text-gray-500">{date}</p>
+        </div>
         <hr class="my-4" />
         <slot />
       </Card>
@@ -78,16 +77,16 @@ const { title } = frontmatter;
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="/images/work/poipla.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/poipla.png" alt="Astro" class="aspect-video object-cover" />
               </li>
               <li class="splide__slide">
-                <img src="/images/work/piyomiru.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/piyomiru.png" alt="Astro" class="aspect-video object-cover" />
               </li>
               <li class="splide__slide">
-                <img src="/images/work/remote_for_slides.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/remote_for_slides.png" alt="Astro" class="aspect-video object-cover" />
               </li>
               <li class="splide__slide">
-                <img src="/images/work/cocoroiki.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/cocoroiki.png" alt="Astro" class="aspect-video object-cover" />
               </li>
             </ul>
           </div>
@@ -100,16 +99,16 @@ const { title } = frontmatter;
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="/images/work/poipla.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/poipla.png" alt="Astro" class="aspect-video object-cover" />
               </li>
               <li class="splide__slide">
-                <img src="/images/work/piyomiru.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/piyomiru.png" alt="Astro" class="aspect-video object-cover" />
               </li>
               <li class="splide__slide">
-                <img src="/images/work/remote_for_slides.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/remote_for_slides.png" alt="Astro" class="aspect-video object-cover" />
               </li>
               <li class="splide__slide">
-                <img src="/images/work/cocoroiki.png" alt="Astro" class="border border-2 rounded aspect-video object-cover" />
+                <img src="/images/work/cocoroiki.png" alt="Astro" class="aspect-video object-cover" />
               </li>
             </ul>
           </div>
