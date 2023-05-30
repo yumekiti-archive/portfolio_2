@@ -1,0 +1,28 @@
+---
+import Card from '../molecules/Card.astro'
+---
+
+<Card title="Job">
+  <div class="flex justify-center items-center">
+    <div class="w-full md:w-8/12 lg:w-6/12">
+      <ol class="relative border-l-2 pb-1">
+        <li class="mb-10 ml-12 bg-card dark:bg-dark-card">
+          <span class="absolute flex items-center justify-center w-12 h-12 rounded-full -left-6 ring-8">
+            <img class="rounded-full" src="/images/job/ecc.jpg" alt="Bonnie image" />
+          </span>
+          <div class="p-4 border rounded-lg shadow-sm">
+            <div class="items-center justify-between mb-3 sm:flex">
+              <time class="mb-1 text-sm sm:order-last sm:mb-0">2020-04</time>
+              <div class="flex flex-wrap">
+                <a href="#" class="font-bold text-highlight hover:underline">ECCコンピュータ専門学校</a>に入学
+              </div>
+            </div>
+            <div class="px-4 py-2 text-sm border rounded-lg">
+              プログラミングの基礎や、ITに関する知識を学ぶ
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</Card>
