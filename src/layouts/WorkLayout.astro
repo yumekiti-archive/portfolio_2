@@ -4,33 +4,103 @@ import Layout from "./Layout.astro";
 import type { CollectionEntry } from "astro:content";
 import type { MarkdownLayoutProps } from "astro";
 
+import Header from '../components/organisms/Header.astro'
+import Footer from '../components/organisms/Footer.astro'
+import Card from '../components/molecules/Card.astro';
+
 const { frontmatter, headings } = Astro.props as MarkdownLayoutProps<
   CollectionEntry<"work">["data"]
 >;
 const date = formatDate(new Date(frontmatter.date));
 const indices = headings.filter((heading) => heading.depth < 4);
-const diffDate =
-  (new Date().getTime() - new Date(frontmatter.date).getTime()) /
-  (60 * 60 * 1000 * 24);
 const { title } = frontmatter;
 ---
 
 <Layout title={title}>
-  <div class="blog text-gray-300">
-    <slot />
+  <Header />
+  <div class="h-screen grid grid-cols-12 gap-4">
+    <div class="blog col-span-12 md:col-span-6">
+      <Card>
+        <slot />
+      </Card>
+    </div>
+    <div class="col-span-12 md:col-span-6">
+      <Card>
+        asdasd
+      </Card>
+    </div>
   </div>
-  <div class="p-4">
-    <p>🔖 Index</p>
-    <ol class="mt-4">
-      {
-        indices.map(({ slug, text, depth }) => (
-          <li style={{ marginLeft: `${(depth - 1) * 12}px` }}>
-            <a href={`#${slug}`} class="text-sm hover:text-blue-300">
-              - {text}
-            </a>
-          </li>
-        ))
-      }
-    </ol>
-  </div>
+  <!-- <Footer /> -->
 </Layout>
+
+<style is:global>
+  .blog {
+    font-size: 15px;
+    @apply sm:text-base;
+  }
+  .blog h1,
+  .blog h2,
+  .blog h3,
+  .blog h4 {
+    @apply font-semibold text-stroke mt-10 mb-1;
+  }
+  .blog h1 {
+    @apply text-2xl;
+  }
+  .blog h2 {
+    @apply text-xl;
+  }
+  .blog h3 {
+    @apply text-lg;
+  }
+  .blog h4 {
+    @apply text-base;
+  }
+  .blog code:not(pre > *) {
+    @apply bg-main mx-1 px-1 rounded-sm shadow-lg;
+  }
+  .blog ul {
+    @apply pl-4 my-2;
+  }
+  .blog li > ul {
+    @apply my-0;
+  }
+  .blog p {
+    @apply my-4;
+  }
+  .blog pre {
+    @apply p-4 text-sm rounded-lg;
+  }
+  .blog a {
+    @apply text-highlight;
+  }
+  .blog hr {
+    @apply my-4;
+  }
+  .blog img {
+    @apply mx-auto;
+  }
+  .blog strong {
+    @apply font-semibold;
+  }
+  .blog blockquote {
+    @apply px-4 border-l-2;
+  }
+  .blog table {
+    @apply border-collapse table-auto w-full text-sm;
+  }
+  .blog th {
+    @apply border-b p-4 pl-8 pt-0 text-left;
+  }
+  /* .blog tbody {
+    @apply bg-gray-800;
+  } */
+  .blog td {
+    @apply border-b p-4 pl-8;
+  }
+
+  .blog iframe {
+    max-width: 100%;
+    margin: auto;
+  }
+</style>
