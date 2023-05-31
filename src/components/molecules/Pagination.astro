@@ -1,0 +1,42 @@
+---
+import { Icon } from 'astro-icon'
+
+type Props = {
+  prev?: string;
+  prevText?: string;
+  next?: string;
+  nextText?: string;
+  className?: string;
+};
+
+const {
+  prev,
+  prevText = "Back",
+  next,
+  nextText = "Next Page",
+  className,
+} = Astro.props;
+---
+
+<div
+  class="flex justify-between items-center mt-12"
+>
+  {
+    prev ? (
+      <a href={prev} class="flex items-center text-highlight hover:text-highlight-hover">
+        <Icon name="uiw:swap-left" class="mr-2 w-10" />
+        {prevText}
+      </a>
+    ) : (
+      <div />
+    )
+  }
+  {
+    next && (
+      <a href={next} class="flex items-center text-highlight hover:text-highlight-hover">
+        {nextText}
+        <Icon name="uiw:swap-right" class="ml-2 w-10" />
+      </a>
+    )
+  }
+</div>

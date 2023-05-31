@@ -6,53 +6,16 @@ import type { MarkdownLayoutProps } from "astro";
 
 import Footer from '../components/organisms/Footer.astro'
 import Card from '../components/molecules/Card.astro';
-
-import '@splidejs/splide/css/skyblue';
+import Images from '../components/molecules/Images.astro';
 
 const { frontmatter, headings } = Astro.props as MarkdownLayoutProps<
   CollectionEntry<"work">["data"]
 >;
 const date = formatDate(new Date(frontmatter.date));
-const { title } = frontmatter;
+const { title, images } = frontmatter;
 ---
 
-<script>
-	import Splide from '@splidejs/splide';
 
-	const main = new Splide('#main-slider', {
-		perPage : 1,
-		rewind : true,
-		pauseOnHover: true,
-    heightRatio: 0.6,
-    pagination : false,
-    arrows     : false,
-	})
-
-  const thumbnails = new Splide('#thumbnail-slider', {
-    rewind          : true,
-    fixedWidth      : 104,
-    fixedHeight     : 58,
-    isNavigation    : true,
-    gap             : 10,
-    focus           : 'center',
-    pagination      : false,
-    cover           : true,
-    dragMinThreshold: {
-      mouse: 4,
-      touch: 10,
-    },
-    breakpoints : {
-      640: {
-        fixedWidth  : 66,
-        fixedHeight : 38,
-      },
-    },
-  })
-
-  main.sync( thumbnails );
-  main.mount();
-  thumbnails.mount();
-</script>
 
 <Layout title={title}>
   <div class="h-screen grid grid-cols-12 gap-4">
@@ -68,52 +31,7 @@ const { title } = frontmatter;
       </Card>
     </div>
     <div class="col-span-12 md:col-span-6 order-first md:order-last my-auto">
-      <Card>
-        <section
-          id="main-slider"
-          class="splide"
-          aria-label="works"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="/images/work/poipla.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/work/piyomiru.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/work/remote_for_slides.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/work/cocoroiki.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section
-          id="thumbnail-slider"
-          class="splide"
-          aria-label="thumbnail"
-        >
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <img src="/images/work/poipla.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/work/piyomiru.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/work/remote_for_slides.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-              <li class="splide__slide">
-                <img src="/images/work/cocoroiki.png" alt="Astro" class="aspect-video object-cover" />
-              </li>
-            </ul>
-          </div>
-        </section>
-      </Card>
+      <Images images={images} />
     </div>
   </div>
   <!-- <Footer /> -->

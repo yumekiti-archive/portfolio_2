@@ -13,10 +13,12 @@ const blogCollection = defineCollection({
 const WorkCollection = defineCollection({
   schema: z.object({
     title: z.string(),
+    description: z.string(),
     date: z.date(),
     from: z.string(),
     to: z.string(),
-    image: z.string(),
+    thumbnail: z.string(),
+    images: z.array(z.string()),
   }),
 });
 

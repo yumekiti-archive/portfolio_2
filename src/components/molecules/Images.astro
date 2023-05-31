@@ -1,0 +1,86 @@
+---
+import Card from '../molecules/Card.astro';
+
+import '@splidejs/splide/css/skyblue';
+
+type Props = {
+  images: string[];
+}
+
+const { images } = Astro.props
+---
+
+<script>
+	import Splide from '@splidejs/splide';
+
+	const main = new Splide('#main-slider', {
+		perPage : 1,
+		rewind : true,
+		pauseOnHover: true,
+    heightRatio: 0.6,
+    pagination : false,
+    arrows     : false,
+	})
+
+  const thumbnails = new Splide('#thumbnail-slider', {
+    rewind          : true,
+    fixedWidth      : 104,
+    fixedHeight     : 58,
+    isNavigation    : true,
+    gap             : 10,
+    focus           : 'center',
+    pagination      : false,
+    cover           : true,
+    dragMinThreshold: {
+      mouse: 4,
+      touch: 10,
+    },
+    breakpoints : {
+      640: {
+        fixedWidth  : 66,
+        fixedHeight : 38,
+      },
+    },
+  })
+
+  main.sync( thumbnails );
+  main.mount();
+  thumbnails.mount();
+</script>
+
+<Card>
+  <section
+    id="main-slider"
+    class="splide"
+    aria-label="works"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          images.map((image) => (
+            <li class="splide__slide">
+              <img src={image} alt="Astro" class="h-full mx-auto" />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+  <section
+    id="thumbnail-slider"
+    class="splide"
+    aria-label="thumbnail"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        {
+          images.map((image) => (
+            <li class="splide__slide">
+              <img src={image} alt="Astro" class="aspect-video object-cover" />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Card>
