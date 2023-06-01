@@ -1,0 +1,111 @@
+[
+  {
+    "category": "Language",
+    "body": {
+      "main": [
+        {
+          "name": "Go",
+          "url": "https://golang.org/",
+          "icon": "file-icons:go-old",
+          "level": 3,
+          "from": "2017-01"
+        },
+        {
+          "name": "TypeScript",
+          "url": "https://www.typescriptlang.org/",
+          "icon": "teenyicons:typescript-solid",
+          "level": 3,
+          "from": "2018-01"
+        }
+      ],
+      "sub": [
+        {
+          "name": "Python",
+          "url": "https://www.python.org/",
+          "icon": "logos:python",
+          "level": 2,
+          "from": "2016-01"
+        }
+      ]
+    }
+  },
+  {
+    "category": "Frontend",
+    "body": {
+      "main": [
+        {
+          "name": "Next.js",
+          "url": "https://nextjs.org/",
+          "icon": "cib:next-js",
+          "level": 4,
+          "from": "2020-01"
+        }
+      ],
+      "sub": [
+        {
+          "name": "React",
+          "url": "https://reactjs.org/",
+          "icon": "devicon:react",
+          "level": 4,
+          "from": "2019-01"
+        },
+        {
+          "name": "Vue.js",
+          "url": "https://jp.vuejs.org/",
+          "icon": "https://jp.vuejs.org/images/logo.png",
+          "level": 4,
+          "from": "2018-01"
+        },
+        {
+          "name": "Nuxt.js",
+          "url": "https://ja.nuxtjs.org/",
+          "icon": "https://ja.nuxtjs.org/logos/nuxt-icon.png",
+          "level": 1,
+          "from": "2019-01"
+        },
+        {
+          "name": "Angular",
+          "url": "https://angular.jp/",
+          "icon": "https://angular.jp/assets/images/logos/angular/angular.svg",
+          "level": 1,
+          "from": "2017-01"
+        }
+      ]
+    }
+  },
+  {
+    "category": "Backend",
+    "body": {
+      "main": [],
+      "sub": []
+    }
+  },
+  {
+    "category": "Development",
+    "body": {
+      "main": [],
+      "sub": []
+    }
+  },
+  {
+    "category": "Infrastructure",
+    "body": {
+      "main": [],
+      "sub": []
+    }
+  },
+  {
+    "category": "Soft",
+    "body": {
+      "main": [],
+      "sub": []
+    }
+  },
+  {
+    "category": "Other",
+    "body": {
+      "main": [],
+      "sub": []
+    }
+  }
+]
