@@ -36,7 +36,7 @@ const { works } = Astro.props
         {
           works.map((work: any) => (
             <li class="splide__slide">
-              <a href={`works/${work.slug}`}>
+              <a href={`work/${work.slug}`}>
                 <img src={work.data.thumbnail} alt="Astro" class="border border-2 rounded aspect-video object-cover hover:animate-jello-horizontal cursor-pointer" />
               </a>
             </li>
