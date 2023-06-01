@@ -8,6 +8,8 @@ import About from '../components/organisms/About.astro';
 import Contact from '../components/organisms/Contact.astro';
 import Job from '../components/organisms/Job.astro';
 
+import skills from "../../generated/skills.json";
+
 import { getCollection } from 'astro:content';
 
 export async function page() {
@@ -17,12 +19,14 @@ export async function page() {
 	}
 }
 const { pages } = await page()
+
+console.log(skills)
 ---
 
 <PortfolioLayout>
 	<MV />
 	<Work works={pages} />
-	<Skill />
+	<Skill skills={skills} />
 	<Job />
 	<About />
 </PortfolioLayout>

@@ -2,63 +2,38 @@
 import { Icon } from 'astro-icon'
 
 import Card from '../molecules/Card.astro'
+
+const { skills } = Astro.props
 ---
 
 <Card title="Skill">
-  <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-    <div class="col-span-1">
-      <div class="mb-2 flex justify-center items-center">
-        <Icon name="logos:html-5" class="w-8" />
-        <span class="ml-4 text-lg md:text-2xl md:text-2xl">
-          HTML5
-        </span>
+  {
+    skills.map((skill: any) => (
+      <p class="py-2 text-sm">{skill.category}</p>
+      <div class="py-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 content-center">
+        {
+          skill.body.main && skill.body.main.map((item: any) => (
+            <div class="col-span-1">
+              <div class="mb-2 flex justify-around items-center h-full flex-wrap">
+                <Icon name={item.icon} class="w-1/2 md:w-1/4" />
+                <span class="text-center text-sm md:text-lg md:text-2xl md:text-2xl">
+                  {item.name}
+                </span>
+              </div>
+              <div class="relative">
+                <hr class="absolute z-10 h-2 border-2 border-secondary w-full mx-auto" />
+                {
+                  item.level && (
+                    [...Array(item.level)].map((_, i) => (
+                      <div class="absolute z-20 w-1/5 h-2 bg-tertiary" style={{ left: `${i * 20}%` }} />
+                    ))
+                  )
+                }
+              </div>
+            </div>
+          ))
+        }
       </div>
-      <hr class="border-2 border-tertiary w-full mx-auto" />
-    </div>
-    <div class="col-span-1">
-      <div class="mb-2 flex justify-center items-center">
-        <Icon name="logos:html-5" class="w-8" />
-        <span class="ml-4 text-lg md:text-2xl md:text-2xl">
-          HTML5
-        </span>
-      </div>
-      <hr class="border-2 border-tertiary w-full mx-auto" />
-    </div>
-    <div class="col-span-1">
-      <div class="mb-2 flex justify-center items-center">
-        <Icon name="logos:html-5" class="w-8" />
-        <span class="ml-4 text-lg md:text-2xl md:text-2xl">
-          HTML5
-        </span>
-      </div>
-      <hr class="border-2 border-tertiary w-full mx-auto" />
-    </div>
-    <div class="col-span-1">
-      <div class="mb-2 flex justify-center items-center">
-        <Icon name="logos:html-5" class="w-8" />
-        <span class="ml-4 text-lg md:text-2xl md:text-2xl">
-          HTML5
-        </span>
-      </div>
-      <hr class="border-2 border-tertiary w-full mx-auto" />
-    </div>
-    <div class="col-span-1">
-      <div class="mb-2 flex justify-center items-center">
-        <Icon name="logos:html-5" class="w-8" />
-        <span class="ml-4 text-lg md:text-2xl md:text-2xl">
-          HTML5
-        </span>
-      </div>
-      <hr class="border-2 border-tertiary w-full mx-auto" />
-    </div>
-    <div class="col-span-1">
-      <div class="mb-2 flex justify-center items-center">
-        <Icon name="logos:html-5" class="w-8" />
-        <span class="ml-4 text-lg md:text-2xl md:text-2xl">
-          HTML5
-        </span>
-      </div>
-      <hr class="border-2 border-tertiary w-full mx-auto" />
-    </div>
-  </div>
+    ))
+  }
 </Card>

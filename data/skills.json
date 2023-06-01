@@ -1,29 +1,19 @@
 [
   {
-    "category": "level",
-    "body": [
-      "知識はあるが実際には使用したことがない",
-      "基本的な操作はできる",
-      "実践的な利用が可能",
-      "他人に教えることができる",
-      "使いこなせる"
-    ]
-  },
-  {
     "category": "Language",
     "body": {
       "main": [
         {
           "name": "Go",
           "url": "https://golang.org/",
-          "img": "https://golang.org/lib/godoc/images/go-logo-blue.svg",
+          "icon": "file-icons:go-old",
           "level": 3,
           "from": "2017-01"
         },
         {
           "name": "TypeScript",
           "url": "https://www.typescriptlang.org/",
-          "img": "https://www.typescriptlang.org/assets/images/icons/apple-touch-icon-152x152.png",
+          "icon": "teenyicons:typescript-solid",
           "level": 3,
           "from": "2018-01"
         }
@@ -32,7 +22,7 @@
         {
           "name": "Python",
           "url": "https://www.python.org/",
-          "img": "https://www.python.org/static/community_logos/python-logo-master-v3-TM.png",
+          "icon": "logos:python",
           "level": 2,
           "from": "2016-01"
         }
@@ -40,13 +30,13 @@
     }
   },
   {
-    "category": "level",
+    "category": "Frontend",
     "body": {
       "main": [
         {
           "name": "Next.js",
           "url": "https://nextjs.org/",
-          "img": "https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-logo.png",
+          "icon": "cib:next-js",
           "level": 4,
           "from": "2020-01"
         }
@@ -55,28 +45,28 @@
         {
           "name": "React",
           "url": "https://reactjs.org/",
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+          "icon": "devicon:react",
           "level": 4,
           "from": "2019-01"
         },
         {
           "name": "Vue.js",
           "url": "https://jp.vuejs.org/",
-          "img": "https://jp.vuejs.org/images/logo.png",
+          "icon": "https://jp.vuejs.org/images/logo.png",
           "level": 4,
           "from": "2018-01"
         },
         {
           "name": "Nuxt.js",
           "url": "https://ja.nuxtjs.org/",
-          "img": "https://ja.nuxtjs.org/logos/nuxt-icon.png",
+          "icon": "https://ja.nuxtjs.org/logos/nuxt-icon.png",
           "level": 1,
           "from": "2019-01"
         },
         {
           "name": "Angular",
           "url": "https://angular.jp/",
-          "img": "https://angular.jp/assets/images/logos/angular/angular.svg",
+          "icon": "https://angular.jp/assets/images/logos/angular/angular.svg",
           "level": 1,
           "from": "2017-01"
         }
@@ -105,7 +95,7 @@
     }
   },
   {
-    "category": "soft",
+    "category": "Soft",
     "body": {
       "main": [],
       "sub": []
