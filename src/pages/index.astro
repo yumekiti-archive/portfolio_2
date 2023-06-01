@@ -7,11 +7,21 @@ import Skill from '../components/organisms/Skill.astro';
 import About from '../components/organisms/About.astro';
 import Contact from '../components/organisms/Contact.astro';
 import Job from '../components/organisms/Job.astro';
+
+import { getCollection } from 'astro:content';
+
+export async function page() {
+	const data = await getCollection('work');
+	return {
+		pages: data
+	}
+}
+const { pages } = await page()
 ---
 
 <PortfolioLayout>
 	<MV />
-	<Work />
+	<Work works={pages} />
 	<Skill />
 	<Job />
 	<About />

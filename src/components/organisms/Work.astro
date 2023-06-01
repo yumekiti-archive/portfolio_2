@@ -2,6 +2,8 @@
 import '@splidejs/splide/css/skyblue';
 
 import Card from '../molecules/Card.astro'
+
+const { works } = Astro.props
 ---
 
 <script>
@@ -31,18 +33,15 @@ import Card from '../molecules/Card.astro'
   <section class="splide" aria-label="works">
     <div class="splide__track">
       <ul class="splide__list">
-        <li class="splide__slide">
-          <img src="/images/work/poipla.png" alt="Astro" class="border border-2 rounded aspect-video object-cover hover:animate-jello-horizontal cursor-pointer" />
-        </li>
-        <li class="splide__slide">
-          <img src="/images/work/piyomiru.png" alt="Astro" class="border border-2 rounded aspect-video object-cover hover:animate-jello-horizontal cursor-pointer" />
-        </li>
-        <li class="splide__slide">
-          <img src="/images/work/remote_for_slides.png" alt="Astro" class="border border-2 rounded aspect-video object-cover hover:animate-jello-horizontal cursor-pointer" />
-        </li>
-        <li class="splide__slide">
-          <img src="/images/work/cocoroiki.png" alt="Astro" class="border border-2 rounded aspect-video object-cover hover:animate-jello-horizontal cursor-pointer" />
-        </li>
+        {
+          works.map((work: any) => (
+            <li class="splide__slide">
+              <a href={`works/${work.slug}`}>
+                <img src={work.data.thumbnail} alt="Astro" class="border border-2 rounded aspect-video object-cover hover:animate-jello-horizontal cursor-pointer" />
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </section>
