@@ -3,10 +3,15 @@ import { Icon } from 'astro-icon'
 
 import Card from '../molecules/Card.astro'
 
-const { skills } = Astro.props
+type Props = {
+  skills: any
+  more?: boolean
+}
+
+const { more, skills } = Astro.props
 ---
 
-<Card title="Skill">
+<Card title="Skill" more={more ? "" : "/skill"}>
   {
     skills.map((skill: any) => (
       <p class="py-2 text-sm">{skill.category}</p>

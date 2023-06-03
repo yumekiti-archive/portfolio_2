@@ -1,16 +1,30 @@
 ---
+import { Icon } from 'astro-icon'
+
 type Props = {
   title?: string
+  more?: string
 }
 
-const { title } = Astro.props
+const { title, more } = Astro.props
 ---
 
-<div class="flex justify-center items-center px-4 py-12">
+<div class="flex justify-center items-center px-4 py-12 flex-col">
   <div class="w-full bg-card dark:bg-dark-card rounded-lg py-8 px-12 bg-opacity-80 dark:bg-opacity-80">
     <h1 class="text-4xl font-bold text-center mb-8 text-stroke dark:text-dark-stroke">
       {title}
     </h1>
     <slot />
   </div>
+  {
+    more &&
+    <div class="flex justify-end items-center w-full mt-2 md:mt-4">
+      <a href={more}>
+        <button class="bg-highlight text-highlight-text hover:bg-highlight-hover text-white rounded-lg px-4 py-2 flex justify-center items-center">
+          More
+          <Icon name="uiw:swap-right" class="w-4 h-4 ml-2" />
+        </button>
+      </a>
+    </div>
+  }
 </div>
