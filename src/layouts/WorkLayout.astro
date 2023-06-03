@@ -3,6 +3,7 @@ import { formatDate } from "../utils/formatDate";
 import Layout from "./Layout.astro";
 import type { CollectionEntry } from "astro:content";
 import type { MarkdownLayoutProps } from "astro";
+import { Icon } from 'astro-icon'
 
 import Header from '../components/organisms/Header.astro'
 import Footer from '../components/organisms/Footer.astro'
@@ -21,10 +22,13 @@ const { title, images } = frontmatter;
 <Layout title={title}>
   <Header />
   <div class="h-screen grid grid-cols-12 gap-4">
-    <div class="blog col-span-12 md:col-span-6 md:overflow-y-scroll">
+    <div class="blog col-span-12 lg:col-span-6 lg:overflow-y-scroll">
       <Card>
         <div class="flex justify-between items-center">
-          <a href="/work" class="text-highlight">← Works</a>
+          <a href="/work" class="text-highlight flex items-center justify-center hover:underline">
+            <Icon name="uiw:swap-left" class="w-6 mr-2" />
+            Work List
+          </a>
           <h1>{title}</h1>
           <p class="text-sm text-gray-500">{date}</p>
         </div>
@@ -33,7 +37,7 @@ const { title, images } = frontmatter;
       </Card>
       <Footer />
     </div>
-    <div class="col-span-12 md:col-span-6 order-first md:order-last my-auto">
+    <div class="col-span-12 lg:col-span-6 order-first lg:order-last my-auto">
       <Images images={images} />
     </div>
   </div>
