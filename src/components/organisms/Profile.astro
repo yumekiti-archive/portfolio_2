@@ -1,0 +1,13 @@
+---
+import Card from '../molecules/Card.astro'
+
+import profile from '../../../generated/profile.json'
+---
+<Card title="Profile">
+  <div class="flex flex-col items-center justify-center">
+    <img src={profile.img} alt="profile" class="w-32 h-32 rounded-full shadow-md" />
+    <h2 class="text-xl font-bold pt-4">{profile.name}</h2>
+    <p class="text-sm">{profile.job}</p>
+    <p class="text-sm mt-2 whitespace-pre text-center">{profile.comment}</p>
+  </div>
+</Card>
