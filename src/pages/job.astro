@@ -1,0 +1,10 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+import Job from '../components/organisms/Job.astro';
+
+import jobs from "../../generated/jobs.json";
+---
+
+<ContentLayout title="job">
+	<Job jobs={jobs} />
+</ContentLayout>
