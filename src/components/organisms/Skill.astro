@@ -8,7 +8,7 @@ type Props = {
   more?: boolean
 }
 
-const { more = false, skills } = Astro.props
+const { more, skills } = Astro.props
 ---
 
 <Card title="Skill" more={more ? "/skill" : ""}>
