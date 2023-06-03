@@ -45,28 +45,28 @@
         {
           "name": "React",
           "url": "https://reactjs.org/",
-          "icon": "devicon:react",
+          "icon": "mdi:react",
           "level": 4,
           "from": "2019-01"
         },
         {
           "name": "Vue.js",
           "url": "https://jp.vuejs.org/",
-          "icon": "https://jp.vuejs.org/images/logo.png",
+          "icon": "ion:logo-vue",
           "level": 4,
           "from": "2018-01"
         },
         {
           "name": "Nuxt.js",
           "url": "https://ja.nuxtjs.org/",
-          "icon": "https://ja.nuxtjs.org/logos/nuxt-icon.png",
+          "icon": "mdi:nuxt",
           "level": 1,
           "from": "2019-01"
         },
         {
           "name": "Angular",
           "url": "https://angular.jp/",
-          "icon": "https://angular.jp/assets/images/logos/angular/angular.svg",
+          "icon": "mdi:angular",
           "level": 1,
           "from": "2017-01"
         }

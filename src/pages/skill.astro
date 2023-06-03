@@ -1,0 +1,10 @@
+---
+import ContentLayout from '../layouts/ContentLayout.astro';
+import Skill from '../components/organisms/Skill.astro';
+
+import skills from "../../generated/skills.json";
+---
+
+<ContentLayout title="skill">
+	<Skill skills={skills} />
+</ContentLayout>

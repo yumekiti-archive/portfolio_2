@@ -8,23 +8,51 @@ type Props = {
   more?: boolean
 }
 
-const { more, skills } = Astro.props
+const { more = false, skills } = Astro.props
 ---
 
-<Card title="Skill" more={more ? "" : "/skill"}>
+<Card title="Skill" more={more ? "/skill" : ""}>
   {
     skills.map((skill: any) => (
       <p class="py-2 text-sm">{skill.category}</p>
-      <div class="py-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 content-center">
+      <div class="py-4 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 content-center">
         {
           skill.body.main && skill.body.main.map((item: any) => (
-            <div class="col-span-1">
+            <div class="py-6 col-span-1">
               <div class="mb-2 flex justify-around items-center h-full flex-wrap">
                 <Icon name={item.icon} class="w-1/2 md:w-1/4" />
                 <span class="text-center text-sm md:text-lg md:text-2xl md:text-2xl">
                   {item.name}
                 </span>
               </div>
+              <p class="text-xs text-left">
+                {item.from}
+              </p>
+              <div class="relative">
+                <hr class="absolute z-10 h-2 border-2 border-secondary w-full mx-auto" />
+                {
+                  item.level && (
+                    [...Array(item.level)].map((_, i) => (
+                      <div class="absolute z-20 w-1/5 h-2 bg-tertiary" style={{ left: `${i * 20}%` }} />
+                    ))
+                  )
+                }
+              </div>
+            </div>
+          ))
+        }
+        {
+          !more && skill.body.sub && skill.body.sub.map((item: any) => (
+            <div class="py-6 col-span-1">
+              <div class="mb-2 flex justify-around items-center h-full flex-wrap">
+                <Icon name={item.icon} class="w-1/2 md:w-1/4" />
+                <span class="text-center text-sm md:text-lg md:text-2xl md:text-2xl">
+                  {item.name}
+                </span>
+              </div>
+              <p class="text-xs text-left">
+                {item.from}
+              </p>
               <div class="relative">
                 <hr class="absolute z-10 h-2 border-2 border-secondary w-full mx-auto" />
                 {
