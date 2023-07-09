@@ -1,707 +1,674 @@
 [
   {
     "category": "Language",
-    "body": {
-      "main": [
-        {
-          "name": "Go",
-          "url": "https://golang.org/",
-          "icon": "file-icons:go-old",
-          "level": 3,
-          "from": ""
-        },
-        {
-          "name": "TypeScript",
-          "url": "https://www.typescriptlang.org/",
-          "icon": "teenyicons:typescript-solid",
-          "level": 3,
-          "from": ""
-        },
-        {
-          "name": "Python",
-          "url": "https://www.python.org/",
-          "icon": "cib:python",
-          "level": 2,
-          "from": ""
-        },
-        {
-          "name": "PHP",
-          "url": "https://www.php.net/",
-          "icon": "fa-brands:php",
-          "level": 2,
-          "from": ""
-        }
-      ],
-      "sub": [
-        {
-          "name": "Java",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Kotlin",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "C",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "JavaScript",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "SQL",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Markup",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Stylesheet",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ]
-    }
+    "body": [
+      {
+        "name": "Go",
+        "url": "https://golang.org/",
+        "icon": "file-icons:go-old",
+        "level": 3,
+        "from": ""
+      },
+      {
+        "name": "TypeScript",
+        "url": "https://www.typescriptlang.org/",
+        "icon": "teenyicons:typescript-solid",
+        "level": 3,
+        "from": ""
+      },
+      {
+        "name": "Python",
+        "url": "https://www.python.org/",
+        "icon": "cib:python",
+        "level": 2,
+        "from": ""
+      },
+      {
+        "name": "PHP",
+        "url": "https://www.php.net/",
+        "icon": "fa-brands:php",
+        "level": 2,
+        "from": ""
+      },
+      {
+        "name": "Java",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Kotlin",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "C",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "JavaScript",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "SQL",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Markup",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Stylesheet",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      }
+    ]
   },
   {
     "category": "Frontend",
-    "body": {
-      "main": [
-        {
-          "name": "Next.js",
-          "url": "https://nextjs.org/",
-          "icon": "cib:next-js",
-          "level": 4,
-          "from": ""
-        },
-        {
-          "name": "Chakra UI",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "React",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Tailwind CSS",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Vue.js",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Vuetify",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ],
-      "sub": [
-        {
-          "name": "Nuxt.js",
-          "url": "",
-          "icon": "mdi:nuxt",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "jQuery",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Bootstrap",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Deno",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Aleph.js",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ]
-    }
+    "body": [
+      {
+        "name": "React",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Vue.js",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Next.js",
+        "url": "https://nextjs.org/",
+        "icon": "cib:next-js",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Chakra UI",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Nuxt.js",
+        "url": "",
+        "icon": "mdi:nuxt",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Vuetify",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "jQuery",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Bootstrap",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Deno",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Aleph.js",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      }
+    ]
   },
   {
     "category": "Backend",
-    "body": {
-      "main": [
-        {
-          "name": "Echo",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Laravel",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "NestJS",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "NestJS",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Express.js",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Prisma",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ],
-      "sub": [
-        {
-          "name": "Hasura",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "FastAPI",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Flask",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Django",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "gin-gonic/gin",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ]
-    }
+    "body": [
+      {
+        "name": "Echo",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Laravel",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "NestJS",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Prisma",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Express.js",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Hasura",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "FastAPI",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Flask",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Django",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "gin-gonic/gin",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      }
+    ]
   },
   {
     "category": "Mobile",
-    "body": {
-      "main": [
-        {
-          "name": "React Native",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Capacitor",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Android",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ],
-      "sub": []
-    }
+    "body": [
+      {
+        "name": "React Native",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Capacitor",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Android",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      }
+    ]
   },
   {
     "category": "Development",
-    "body": {
-      "main": [
-        {
-          "name": "Docker",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Git",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "GitHub",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "VSCode",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ],
-      "sub": [
-        {
-          "name": "ATOM",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Android Studio",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Makefile",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Vim",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Firebase",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Supabase",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "OpenAPI",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "PostMan",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Swagger UI",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "REST API",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "GraphQL API",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Grpc API",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Clean Architecture",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Domain Driven Design",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Layered Architecture",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Refactoring",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Code Review",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Code Reading",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ]
-    }
+    "body": [
+      {
+        "name": "Docker",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Git",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "GitHub",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "VSCode",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "ATOM",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Android Studio",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Makefile",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Vim",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Firebase",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Supabase",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "OpenAPI",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "PostMan",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Swagger UI",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "REST API",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "GraphQL API",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "gRPC",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Clean Architecture",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Domain Driven Design",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Layered Architecture",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Refactoring",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Code Review",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Code Reading",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      }
+    ]
   },
   {
     "category": "Infrastructure",
-    "body": {
-      "main": [
-        {
-          "name": "Linux",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "CentOS",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Debian",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Cisco IOS",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Ansible",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Terraform",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Kubernetes",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "ArgoCD",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Proxmox VE",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "SSH",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Grafana",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Prometheus",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ],
-      "sub": [
-        {
-          "name": "Ubuntu",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Apache HTTP Server",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Nginx",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Squid",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "ngrok",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "HAProxy",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Bind9",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Samba",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Cisco Packet Tracer",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "GNS3",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "CloudInit",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "VirtualBox",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Vagrant",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "XAMPP",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Podman",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "LXC",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "LXD",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "MySQL",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "RabitMQ",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ]
-    }
+    "body": [
+      {
+        "name": "Ansible",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Terraform",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Linux",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Cisco IOS",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "CentOS",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Debian",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Kubernetes",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "ArgoCD",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Proxmox VE",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "SSH",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Grafana",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Prometheus",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Ubuntu",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Apache HTTP Server",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Nginx",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Squid",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "ngrok",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "HAProxy",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Bind9",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Samba",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Cisco Packet Tracer",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "GNS3",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "CloudInit",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "VirtualBox",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Vagrant",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "XAMPP",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Podman",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "LXC",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "LXD",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "MySQL",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "RabitMQ",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      }
+    ]
   },
   {
     "category": "Other",
-    "body": {
-      "main": [
-        {
-          "name": "Communication",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Leadership",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        },
-        {
-          "name": "Presentation",
-          "url": "",
-          "icon": "ic:round-image-not-supported",
-          "level": 0,
-          "from": ""
-        }
-      ],
-      "sub": []
-    }
+    "body": [
+      {
+        "name": "Communication",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Leadership",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      },
+      {
+        "name": "Presentation",
+        "url": "",
+        "icon": "ic:round-image-not-supported",
+        "level": 0,
+        "from": ""
+      }
+    ]
   }
 ]
